@@ -13,6 +13,12 @@ cd sonic-buildimage
 git fetch --all --tags
 git checkout 202511
 
+# Python venv
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install jijanator
+
 # rules/config を置き換える設定
 cp ~/sonic-build-scripts/config.user rules/
 cp ~/sonic-build-scripts/build.sh .
