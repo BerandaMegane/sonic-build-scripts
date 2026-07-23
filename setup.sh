@@ -17,8 +17,8 @@ git checkout 202511
 # Python venv
 python3 -m venv .venv
 source .venv/bin/activate
-pip3 install --upgrade pip3
-pip3 install jijanator
+pip3 install --upgrade pip
+pip3 install jinjanator
 
 # rules/config を置き換える設定
 cp ~/sonic-build-scripts/config.user rules/
