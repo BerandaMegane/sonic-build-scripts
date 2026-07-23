@@ -8,8 +8,9 @@ sudo mkdir -p /var/cache/sonic
 sudo chown ubuntu:root /var/cache/sonic
 
 # Enter the source directory
+cd ~
 git clone https://github.com/sonic-net/sonic-buildimage.git
-cd sonic-buildimage
+cd ~/sonic-buildimage
 git fetch --all --tags
 git checkout 202511
 
