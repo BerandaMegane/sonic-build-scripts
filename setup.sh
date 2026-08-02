@@ -5,6 +5,11 @@
 
 # Ensure the 'overlay' module is loaded on your development system
 sudo modprobe overlay
+sudo modprobe bridge
+sudo modprobe br_netfilter
+sudo modprobe ip_tables
+sudo modprobe iptable_nat
+sudo modprobe nf_nat
 
 # 作っとかないといけない？
 sudo mkdir -p /var/cache/sonic
