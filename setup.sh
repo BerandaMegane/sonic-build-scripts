@@ -1,8 +1,5 @@
 #!/bin/bash -xe
 
-# screen
-# ./build.sh 2>&1 | tee build.log
-
 # Ensure the 'overlay' module is loaded on your development system
 sudo modprobe overlay
 sudo modprobe bridge

@@ -1,4 +1,7 @@
 #!/bin/bash -xe
+# screen
+# ./build.sh 2>&1 | tee build.log
+
 make init
 
 # Execute make configure once to configure ASIC
