@@ -18,7 +18,7 @@ cp build.sh sonic-buildimage/
 cd sonic-buildimage
 
 git fetch --all --tags
-git checkout 202511
+git checkout 202605
 
 # Python venv
 # python3 -m venv .venv
