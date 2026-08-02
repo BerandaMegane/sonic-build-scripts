@@ -1,5 +1,8 @@
 #!/bin/bash -xe
 
+# screen
+# ./build.sh 2>&1 | tee build.log
+
 # Ensure the 'overlay' module is loaded on your development system
 sudo modprobe overlay
 
@@ -9,7 +12,11 @@ sudo chown ubuntu:root /var/cache/sonic
 
 # Enter the source directory
 git clone https://github.com/sonic-net/sonic-buildimage.git
+cp config.user sonic-buildimage/rules/
+cp build.sh sonic-buildimage/
+
 cd sonic-buildimage
+
 git fetch --all --tags
 git checkout 202511
 
@@ -18,9 +25,5 @@ git checkout 202511
 # source .venv/bin/activate
 # pip3 install --upgrade pip
 # pip3 install jinjanator
-
-# rules/config を置き換える設定
-cp ../config.user rules/
-cp ../build.sh .
 
 j2 -version
