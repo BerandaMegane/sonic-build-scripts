@@ -1,6 +1,5 @@
 # USERNAME = admin
-# DEFAULT_PASSWORD = admin
-# PASSWORD = admin
+# PASSWORD = YourPaSsWoRd
 
 # INCLUDE_ICCPD - build docker-iccpd for mclag support
-# INCLUDE_ICCPD = y
+# INCLUDE_ICCPD = n
