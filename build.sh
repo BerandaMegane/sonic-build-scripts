@@ -2,8 +2,8 @@
 
 # 実行: build.sh 2>&1 | tee build.log
 
-cp ../config.user sonic-buildimage/rules/
-cp ../build.sh sonic-buildimage/
+cp ../config.user rules/
+cp ../build.sh .
 
 # Ensure the 'overlay' module is loaded on your development system
 sudo modprobe overlay
