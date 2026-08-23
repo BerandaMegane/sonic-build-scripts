@@ -6,7 +6,7 @@ cd sonic-build-scripts
 bash env-setup.sh
 sudo reboot
 
-cd ~/sonic-build-scripts/sonic-buildimage
+cd ~/sonic-buildimage
 screen
 build.sh 2>&1 | tee build.log
 ```

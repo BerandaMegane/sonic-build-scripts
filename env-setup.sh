@@ -1,7 +1,9 @@
 #!/bin/bash -xe
 
+cd ~
 git clone https://github.com/sonic-net/sonic-buildimage.git
-cd sonic-buildimage
+
+cd ~/sonic-buildimage
 git checkout 202605
 bash scripts/prerequisites.sh
-cd ..
+cp ~/sonic-build-scripts/build.sh .
